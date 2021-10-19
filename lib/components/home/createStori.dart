@@ -18,12 +18,12 @@ class CreateStori extends StatelessWidget {
             decoration: BoxDecoration(
               border: Border.all(width: 1, color: Colors.black),
               shape: BoxShape.circle,
-              image: DecorationImage(image: NetworkImage(item['image'])),
+              image: DecorationImage(image: NetworkImage(item['avatar'])),
             ),
           ),
         ),
         Padding(padding: EdgeInsets.only(bottom: 10)),
-        Text(item['price'].toString())
+        Text(item['first_name'].toString())
       ],
     );
   }
